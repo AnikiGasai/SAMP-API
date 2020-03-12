@@ -31,8 +31,10 @@ long SAMP::CRect::GetHeight() {
 void SAMP::CRect::Move(long x, long y) {
 	long w = GetWidth();
 	long h = GetHeight(); 
-	left, top = x, y;
-	right, bottom = x + w, y + h;
+	left = x;
+	top = y;
+	right = x + w;
+	bottom =  y + h;
 }
 
 void SAMP::CRect::SetSize(long w, long h) {
