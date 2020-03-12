@@ -10,13 +10,14 @@
 #include "CRect.h"
 
 SAMP::CRect::CRect() {
-	left, top = 0, 0;
-	right, bottom = 0, 0;
+	left = top = right = bottom = 0;
 }
 
 SAMP::CRect::CRect(long _left, long _top, long _right, long _bottom) {
-	left, top = _left, _top;
-	right, bottom = _right, _bottom;
+	left = _left;
+	top = _top;
+	right = _right;
+	bottom = _bottom;
 }
 
 long SAMP::CRect::GetWidth() {
